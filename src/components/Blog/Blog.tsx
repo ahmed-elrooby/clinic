@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
-
+import img1 from "../Images/13.jpg"
+import img2 from "../Images/7.jpg"
+import img3 from "../Images/13.jpg"
 const Blog = () => {
   return <>
     <div className='py-[50px] '>
@@ -10,12 +12,12 @@ const Blog = () => {
    <div className="grid  md:grid-cols-[65%,auto]  grid-cols-1  gap-4 ">
      
             <div className=''>
-            <Image alt="gallary" className='h-full  w-full object-cover ' src={require("../Images/13.jpg")}/>
+            <Image alt="gallary" className='h-full  w-full object-cover ' src={img1}/>
 
             </div>
             <div className="grid grid-cols-2 md:grid-cols-1 h-full  gap-2">
-        <Image alt="gallary" src={require("../Images/7.jpg")} className='  w-full h-full  object-cover'/>
-        <Image alt="gallary" src={require("../Images/7.jpg")} className='  w-full h-full  object-cover'/>
+        <Image alt="gallary" src={img2} className='  w-full h-full  object-cover'/>
+        <Image alt="gallary" src={img2} className='  w-full h-full  object-cover'/>
             </div>
             
         </div>
@@ -33,18 +35,18 @@ const Blog = () => {
     <h1 className='capitalize font-bold text-[22px]'>recomendation articles </h1>
 <div className='w-full md:w-[70%]'>
 <div className='flex items-start mt-[30px]  border-b-2 pb-4 rounded-none  gap-3'>
-<Image alt="gallary" className='h-[80px] w-[80px] object-cover ' src={require("../Images/13.jpg")}/> 
+<Image alt="gallary" className='h-[80px] w-[80px] object-cover ' src={img3}/> 
 <p className='capitalize'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum deleniti doloribus cum.</p>
 </div>
 
 <div className='flex items-start mt-[30px] w-fit border-b-2 pb-4 rounded-none  gap-3'>
-<Image alt="gallary" className='h-[80px] w-[80px] object-cover ' src={require("../Images/13.jpg")}/> 
+<Image alt="gallary" className='h-[80px] w-[80px] object-cover ' src={img3}/> 
 <p className='capitalize'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum deleniti doloribus cum.</p>
 </div>
 
 
 <div className='flex items-start mt-[30px] w-fit  rounded-none  gap-3'>
-<Image alt="gallary" className='h-[80px] w-[80px] object-cover ' src={require("../Images/13.jpg")}/> 
+<Image alt="gallary" className='h-[80px] w-[80px] object-cover ' src={img3}/> 
 <p className='capitalize'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum deleniti doloribus cum.</p>
 </div>
 </div>

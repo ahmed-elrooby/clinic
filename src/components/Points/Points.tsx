@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Swiper,SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import SliderButtons from './SliderButtons';
+import img1 from "../Images/7.jpg"
 
 const Points = () => {
     return <>
@@ -53,7 +54,7 @@ const Points = () => {
              
                             <SwiperSlide>
                             <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
+                                <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
                                         <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
@@ -68,7 +69,7 @@ const Points = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
+                                <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
                                         <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
@@ -80,9 +81,10 @@ const Points = () => {
                                 </div>
                                 <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
                             </div>
-                        </SwiperSlide>      <SwiperSlide>
+                        </SwiperSlide>
+                        <SwiperSlide>
                             <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
+                                <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
                                         <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
@@ -94,9 +96,9 @@ const Points = () => {
                                 </div>
                                 <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
                             </div>
-                        </SwiperSlide>      <SwiperSlide>
+                        </SwiperSlide>  <SwiperSlide>
                             <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
+                                <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
                                         <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
@@ -108,9 +110,9 @@ const Points = () => {
                                 </div>
                                 <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
                             </div>
-                        </SwiperSlide>      <SwiperSlide>
+                        </SwiperSlide>  <SwiperSlide>
                             <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
+                                <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
                                         <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
@@ -122,9 +124,9 @@ const Points = () => {
                                 </div>
                                 <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
                             </div>
-                        </SwiperSlide>      <SwiperSlide>
+                        </SwiperSlide>  <SwiperSlide>
                             <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
+                                <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
                                         <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
@@ -136,9 +138,9 @@ const Points = () => {
                                 </div>
                                 <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
                             </div>
-                        </SwiperSlide>      <SwiperSlide>
+                        </SwiperSlide>  <SwiperSlide>
                             <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
+                                <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
                                         <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
@@ -150,9 +152,9 @@ const Points = () => {
                                 </div>
                                 <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
                             </div>
-                        </SwiperSlide>      <SwiperSlide>
+                        </SwiperSlide>  <SwiperSlide>
                             <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
+                                <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
                                         <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
@@ -164,23 +166,9 @@ const Points = () => {
                                 </div>
                                 <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
                             </div>
-                        </SwiperSlide>      <SwiperSlide>
+                        </SwiperSlide>  <SwiperSlide>
                             <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
-                                <div>
-                                    <div className='w-full text-green-800 flex items-center justify-between'>
-                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
-                                        </span>
-                                        <span className='capitalize'>ending on</span>
-                                    </div>
-                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
-
-                                </div>
-                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
-                        </SwiperSlide>      <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={require("../Images/7.jpg")} alt='img' />
+                                <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
                                         <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
