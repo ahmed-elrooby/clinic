@@ -6,21 +6,59 @@ import imgthree from "../Images/doc3.jpg"
 import imgfour from "../Images/doc4.jpg"
 import imgfive from "../Images/doc5.jpg"
 import imgsex from "../Images/doctor-detail.jpg"
+import {motion} from "framer-motion"
 const Gallary = () => {
   return <>
   <div>
     <div className='w-[95%] mx-auto'>
-        <h1 className='capitalize text-center my-4 text-main font-bold text-[28px]'>gallary</h1>
+        <motion.h1 
+        
+        initial={{scale:0.5}}
+                transition={{
+                    duration:0.7,
+                    type:"tween"
+                }}
+                whileInView={{
+                    scale:1
+                }}
+        className='capitalize text-center my-4 text-main font-bold text-[28px]'>gallary</motion.h1>
         <div className="grid  md:grid-cols-3  grid-cols-1  gap-2 ">
-        <div className="grid grid-rows-1 md:grid-rows-2  gap-2">
+        <motion.div
+        initial={{scale:0.5}}
+        transition={{
+            duration:0.7,
+            type:"tween"
+        }}
+        whileInView={{
+            scale:1
+        }}
+        className="grid grid-rows-1 md:grid-rows-2  gap-2">
         <Image alt="gallary" src={imgone} className='w-full h-full border object-cover"'/>
                 <Image alt="gallary" src={imgtwo} className=' border w-full h-full object-cover"  '/>
-            </div>
-            <div className=''>
+            </motion.div>
+            <motion.div
+            initial={{scale:0.5}}
+            transition={{
+                duration:0.7,
+                type:"tween"
+            }}
+            whileInView={{
+                scale:1
+            }}
+            className=''>
             <Image alt="gallary" className='h-full border w-full object-cover ' src={imgthree}/>
 
-            </div>
-            <div className='grid h-full gap-2 grid-rows-2'>
+            </motion.div>
+            <motion.div
+            initial={{scale:0.5}}
+            transition={{
+                duration:0.7,
+                type:"tween"
+            }}
+            whileInView={{
+                scale:1
+            }}
+            className='grid h-full gap-2 grid-rows-2'>
 <Image className=' w-full h-full object-cover border' alt="gallary" src={imgfour}/>
 
 <div className='grid gap-2 grid-cols-[40%,1fr]'>
@@ -28,7 +66,7 @@ const Gallary = () => {
 <Image alt="gallary" className='w-full border h-full object-cover' src={imgsex}/>
 
 </div>
-            </div>
+            </motion.div>
         </div>
         
     </div>

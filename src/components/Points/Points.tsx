@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import { CiCalendar } from "react-icons/ci";
 import Link from 'next/link';
-
+import {motion} from "framer-motion";
 import { Swiper,SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import SliderButtons from './SliderButtons';
@@ -12,9 +12,20 @@ const Points = () => {
     return <>
         <div className='my-[50px  '>
             <div className='w-[97%] pt-[50px] mx-auto  '>
+                <motion.div
+                initial={{scale:0.5}}
+                transition={{
+                    duration:0.7,
+                    type:"tween"
+                }}
+                whileInView={{
+                    scale:1
+                }}
+                >
                 <h1 className='text-[20px] capitalize font-bold my-2'>Your Points, Your Gift!</h1>
                 <p className=''>Collect points and redeem them for exclusive discounts and endless offers! </p>
 
+                </motion.div>
                 <div className=''>
                   
 
@@ -53,7 +64,16 @@ const Points = () => {
                             <SliderButtons  />
              
                             <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                            <motion.div 
+                             initial={{ scale: 0.5 }}
+                             transition={{
+                               duration: 0.7,
+                               type: "tween",
+                             }}
+                             whileInView={{
+                               scale: 1,
+                             }}
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
                                 <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
@@ -65,10 +85,20 @@ const Points = () => {
 
                                 </div>
                                 <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
+                            </motion.div>
                         </SwiperSlide>
+                        
                         <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                            <motion.div 
+                            initial={{ scale: 0.5 }}
+                            transition={{
+                              duration: 0.7,
+                              type: "tween",
+                            }}
+                            whileInView={{
+                              scale: 1,
+                            }}
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
                                 <Image className='w-full' src={img1} alt='img' />
                                 <div>
                                     <div className='w-full text-green-800 flex items-center justify-between'>
@@ -80,107 +110,217 @@ const Points = () => {
 
                                 </div>
                                 <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
+                            </motion.div>
+                        </SwiperSlide>     <SwiperSlide>
+                            <motion.div 
+                            initial={{ scale: 0.5 }}
+                            transition={{
+                              duration: 0.7,
+                              type: "tween",
+                            }}
+                            whileInView={{
+                              scale: 1,
+                            }} 
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                                <Image className='w-full' src={img1} alt='img' />
+                                <div>
+                                    <div className='w-full text-green-800 flex items-center justify-between'>
+                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
+                                        </span>
+                                        <span className='capitalize'>ending on</span>
+                                    </div>
+                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
+
+                                </div>
+                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
+                            </motion.div>
+                        </SwiperSlide>     <SwiperSlide>
+                            <motion.div 
+                           initial={{ scale: 0.5 }}
+                           transition={{
+                             duration: 0.7,
+                             type: "tween",
+                           }}
+                           whileInView={{
+                             scale: 1,
+                           }}
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                                <Image className='w-full' src={img1} alt='img' />
+                                <div>
+                                    <div className='w-full text-green-800 flex items-center justify-between'>
+                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
+                                        </span>
+                                        <span className='capitalize'>ending on</span>
+                                    </div>
+                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
+
+                                </div>
+                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
+                            </motion.div>
+                        </SwiperSlide>     <SwiperSlide>
+                            <motion.div 
+                            initial={{ scale: 0.5 }}
+                            transition={{
+                              duration: 0.7,
+                              type: "tween",
+                            }}
+                            whileInView={{
+                              scale: 1,
+                            }}
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                                <Image className='w-full' src={img1} alt='img' />
+                                <div>
+                                    <div className='w-full text-green-800 flex items-center justify-between'>
+                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
+                                        </span>
+                                        <span className='capitalize'>ending on</span>
+                                    </div>
+                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
+
+                                </div>
+                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
+                            </motion.div>
+                        </SwiperSlide>     <SwiperSlide>
+                            <motion.div 
+                            initial={{ scale: 0.5 }}
+                            transition={{
+                              duration: 0.7,
+                              type: "tween",
+                            }}
+                            whileInView={{
+                              scale: 1,
+                            }} 
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                                <Image className='w-full' src={img1} alt='img' />
+                                <div>
+                                    <div className='w-full text-green-800 flex items-center justify-between'>
+                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
+                                        </span>
+                                        <span className='capitalize'>ending on</span>
+                                    </div>
+                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
+
+                                </div>
+                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
+                            </motion.div>
+                        </SwiperSlide>     <SwiperSlide>
+                            <motion.div 
+                            initial={{ scale: 0.5 }}
+                            transition={{
+                              duration: 0.7,
+                              type: "tween",
+                            }}
+                            whileInView={{
+                              scale: 1,
+                            }}
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                                <Image className='w-full' src={img1} alt='img' />
+                                <div>
+                                    <div className='w-full text-green-800 flex items-center justify-between'>
+                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
+                                        </span>
+                                        <span className='capitalize'>ending on</span>
+                                    </div>
+                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
+
+                                </div>
+                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
+                            </motion.div>
+                        </SwiperSlide>     <SwiperSlide>
+                            <motion.div 
+                          initial={{ scale: 0.5 }}
+                          transition={{
+                            duration: 0.7,
+                            type: "tween",
+                          }}
+                          whileInView={{
+                            scale: 1,
+                          }}
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                                <Image className='w-full' src={img1} alt='img' />
+                                <div>
+                                    <div className='w-full text-green-800 flex items-center justify-between'>
+                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
+                                        </span>
+                                        <span className='capitalize'>ending on</span>
+                                    </div>
+                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
+
+                                </div>
+                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
+                            </motion.div>
+                        </SwiperSlide>     <SwiperSlide>
+                            <motion.div 
+                          initial={{ scale: 0.5 }}
+                          transition={{
+                            duration: 0.7,
+                            type: "tween",
+                          }}
+                          whileInView={{
+                            scale: 1,
+                          }}
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                                <Image className='w-full' src={img1} alt='img' />
+                                <div>
+                                    <div className='w-full text-green-800 flex items-center justify-between'>
+                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
+                                        </span>
+                                        <span className='capitalize'>ending on</span>
+                                    </div>
+                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
+
+                                </div>
+                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
+                            </motion.div>
+                        </SwiperSlide>     <SwiperSlide>
+                            <motion.div 
+                            initial={{ scale: 0.5 }}
+                            transition={{
+                              duration: 0.7,
+                              type: "tween",
+                            }}
+                            whileInView={{
+                              scale: 1,
+                            }}
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                                <Image className='w-full' src={img1} alt='img' />
+                                <div>
+                                    <div className='w-full text-green-800 flex items-center justify-between'>
+                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
+                                        </span>
+                                        <span className='capitalize'>ending on</span>
+                                    </div>
+                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
+
+                                </div>
+                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
+                            </motion.div>
+                        </SwiperSlide>     <SwiperSlide>
+                            <motion.div 
+                           initial={{ scale: 0.5 }}
+                           transition={{
+                             duration: 0.7,
+                             type: "tween",
+                           }}
+                           whileInView={{
+                             scale: 1,
+                           }}
+                            className=' transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
+                                <Image className='w-full' src={img1} alt='img' />
+                                <div>
+                                    <div className='w-full text-green-800 flex items-center justify-between'>
+                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
+                                        </span>
+                                        <span className='capitalize'>ending on</span>
+                                    </div>
+                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
+
+                                </div>
+                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
+                            </motion.div>
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={img1} alt='img' />
-                                <div>
-                                    <div className='w-full text-green-800 flex items-center justify-between'>
-                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
-                                        </span>
-                                        <span className='capitalize'>ending on</span>
-                                    </div>
-                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
 
-                                </div>
-                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
-                        </SwiperSlide>  <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={img1} alt='img' />
-                                <div>
-                                    <div className='w-full text-green-800 flex items-center justify-between'>
-                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
-                                        </span>
-                                        <span className='capitalize'>ending on</span>
-                                    </div>
-                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
 
-                                </div>
-                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
-                        </SwiperSlide>  <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={img1} alt='img' />
-                                <div>
-                                    <div className='w-full text-green-800 flex items-center justify-between'>
-                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
-                                        </span>
-                                        <span className='capitalize'>ending on</span>
-                                    </div>
-                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
-
-                                </div>
-                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
-                        </SwiperSlide>  <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={img1} alt='img' />
-                                <div>
-                                    <div className='w-full text-green-800 flex items-center justify-between'>
-                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
-                                        </span>
-                                        <span className='capitalize'>ending on</span>
-                                    </div>
-                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
-
-                                </div>
-                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
-                        </SwiperSlide>  <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={img1} alt='img' />
-                                <div>
-                                    <div className='w-full text-green-800 flex items-center justify-between'>
-                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
-                                        </span>
-                                        <span className='capitalize'>ending on</span>
-                                    </div>
-                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
-
-                                </div>
-                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
-                        </SwiperSlide>  <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={img1} alt='img' />
-                                <div>
-                                    <div className='w-full text-green-800 flex items-center justify-between'>
-                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
-                                        </span>
-                                        <span className='capitalize'>ending on</span>
-                                    </div>
-                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
-
-                                </div>
-                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
-                        </SwiperSlide>  <SwiperSlide>
-                            <div className='card transition-all  flex flex-col items-start gap-3 p-2 border-2 border-transparent hover:border-2 hover:border-main bg-white hover:shadow-lg'>
-                                <Image className='w-full' src={img1} alt='img' />
-                                <div>
-                                    <div className='w-full text-green-800 flex items-center justify-between'>
-                                        <span className='flex gap-1 capitalize items-center text-[14px]'><CiCalendar /> 19 October 2024
-                                        </span>
-                                        <span className='capitalize'>ending on</span>
-                                    </div>
-                                    <p className='leading-[1.8] mt-[10px] capitalize'><Link  href="/login" className='text-main font-bold'>Login</Link> now and get 400 points plus a 5% discount on your first order</p>
-
-                                </div>
-                                <Link className=' ml-auto transition-all hover:bg-blue-400 px-4 py-[8px] rounded-lg bg-main text-white' href="/login">login</Link>
-                            </div>
-                        </SwiperSlide>
 
                     </Swiper>
 

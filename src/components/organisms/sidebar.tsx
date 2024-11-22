@@ -16,6 +16,8 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
     { id: 2, link: "About", href: "/about" },
     { id: 3, link: "Profile", href: "/profile" },
     { id: 4, link: "Contact Us", href: "/contact-us" },
+    { id: 5, link: "blog", href: "/blog" },
+
   ];
 
   return (

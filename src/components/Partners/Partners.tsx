@@ -3,13 +3,24 @@ import React, { useState } from 'react'
 import { Autoplay, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import img from "../Images/doc3.jpg"
+import {motion} from "framer-motion"
 const Partners = () => {
   const [pop, setPop] = useState(false)
 
   return (
     <>
       <div>
-        <h1 className="text-[22px] capitalize font-bold text-center mb-3 text-main">Our Partners</h1>
+        <motion.h1
+        initial={{scale:0.5}}
+        transition={{
+            duration:0.7,
+            type:"tween"
+        }}
+        whileInView={{
+            scale:1
+        }}
+        
+        className="text-[22px] capitalize font-bold text-center mb-3 text-main">Our Partners</motion.h1>
         <div className=" relative">
         <Swiper
                         spaceBetween={15}
@@ -43,7 +54,15 @@ const Partners = () => {
                         }}
                     >   
 <SwiperSlide>
-<div
+<motion.div
+initial={{scale:0.5}}
+transition={{
+    duration:0.7,
+    type:"tween"
+}}
+whileInView={{
+    scale:1
+}}
           onClick={() => setPop(true)}
             className="border cursor-pointer"
           >
@@ -53,12 +72,20 @@ const Partners = () => {
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
          
-          </div>
+          </motion.div>
 </SwiperSlide>
 
 
 <SwiperSlide>
-<div
+<motion.div
+initial={{scale:0.5}}
+transition={{
+    duration:0.7,
+    type:"tween"
+}}
+whileInView={{
+    scale:1
+}}
           onClick={() => setPop(true)}
             className="border cursor-pointer"
           >
@@ -68,10 +95,20 @@ const Partners = () => {
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
          
-          </div>
+          </motion.div>
 </SwiperSlide>
+
+
 <SwiperSlide>
-<div
+<motion.div
+initial={{scale:0.5}}
+transition={{
+    duration:0.7,
+    type:"tween"
+}}
+whileInView={{
+    scale:1
+}}
           onClick={() => setPop(true)}
             className="border cursor-pointer"
           >
@@ -81,10 +118,20 @@ const Partners = () => {
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
          
-          </div>
+          </motion.div>
 </SwiperSlide>
+
+
 <SwiperSlide>
-<div
+<motion.div
+initial={{scale:0.5}}
+transition={{
+    duration:0.7,
+    type:"tween"
+}}
+whileInView={{
+    scale:1
+}}
           onClick={() => setPop(true)}
             className="border cursor-pointer"
           >
@@ -94,10 +141,20 @@ const Partners = () => {
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
          
-          </div>
+          </motion.div>
 </SwiperSlide>
+
+
 <SwiperSlide>
-<div
+<motion.div
+initial={{scale:0.5}}
+transition={{
+    duration:0.7,
+    type:"tween"
+}}
+whileInView={{
+    scale:1
+}}
           onClick={() => setPop(true)}
             className="border cursor-pointer"
           >
@@ -107,10 +164,19 @@ const Partners = () => {
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
          
-          </div>
+          </motion.div>
 </SwiperSlide>
+
 <SwiperSlide>
-<div
+<motion.div
+initial={{scale:0.5}}
+transition={{
+    duration:0.7,
+    type:"tween"
+}}
+whileInView={{
+    scale:1
+}}
           onClick={() => setPop(true)}
             className="border cursor-pointer"
           >
@@ -120,10 +186,19 @@ const Partners = () => {
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
          
-          </div>
+          </motion.div>
 </SwiperSlide>
+
 <SwiperSlide>
-<div
+<motion.div
+initial={{scale:0.5}}
+transition={{
+    duration:0.7,
+    type:"tween"
+}}
+whileInView={{
+    scale:1
+}}
           onClick={() => setPop(true)}
             className="border cursor-pointer"
           >
@@ -133,59 +208,7 @@ const Partners = () => {
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
          
-          </div>
-</SwiperSlide>
-<SwiperSlide>
-<div
-          onClick={() => setPop(true)}
-            className="border cursor-pointer"
-          >
-            <Image className="object-cover" src={img} alt="img" />
-            <div className="flex flex-col gap-2 items-start mt-2 p-2">
-              <h1 className="capitalize font-bold">name of company</h1>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-         
-          </div>
-</SwiperSlide>
-<SwiperSlide>
-<div
-          onClick={() => setPop(true)}
-            className="border cursor-pointer"
-          >
-            <Image className="object-cover" src={img} alt="img" />
-            <div className="flex flex-col gap-2 items-start mt-2 p-2">
-              <h1 className="capitalize font-bold">name of company</h1>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-         
-          </div>
-</SwiperSlide>
-<SwiperSlide>
-<div
-          onClick={() => setPop(true)}
-            className="border cursor-pointer"
-          >
-            <Image className="object-cover" src={img} alt="img" />
-            <div className="flex flex-col gap-2 items-start mt-2 p-2">
-              <h1 className="capitalize font-bold">name of company</h1>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-         
-          </div>
-</SwiperSlide>
-<SwiperSlide>
-<div
-          onClick={() => setPop(true)}
-            className="border cursor-pointer"
-          >
-            <Image className="object-cover" src={img} alt="img" />
-            <div className="flex flex-col gap-2 items-start mt-2 p-2">
-              <h1 className="capitalize font-bold">name of company</h1>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-         
-          </div>
+          </motion.div>
 </SwiperSlide>
 
 
